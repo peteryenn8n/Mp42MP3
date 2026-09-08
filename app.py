@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 import subprocess
+import imageio_ffmpeg
 
 # 設定頁面資訊
 st.set_page_config(page_title="M4A轉MP3神器", page_icon="🎵")
