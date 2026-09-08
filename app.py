@@ -37,6 +37,9 @@ if uploaded_file is not None:
             status_text.text("正在啟動轉檔引擎 (FFmpeg)...")
             progress_bar.progress(30)
 
+            # --- 關鍵補上這行：取得內建的 ffmpeg 執行檔路徑 ---
+            ffmpeg_path = imageio_ffmpeg.get_ffmpeg_exe()
+
             # 2. 執行 FFmpeg 指令
             cmd = [
                 ffmpeg_path,
