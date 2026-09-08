@@ -39,7 +39,7 @@ if uploaded_file is not None:
 
             # 2. 執行 FFmpeg 指令
             cmd = [
-                'ffmpeg',
+                ffmpeg_path,
                 '-i', temp_input,
                 '-vn',            # 不處理影像
                 '-ab', '192k',    # 設定音質 192kbps
